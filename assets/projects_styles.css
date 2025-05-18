@@ -82,10 +82,10 @@ table {
 .cards--3 .card{
   flex:1 1 300px;
   max-width: 500px;
-  height: 22rem;
+  height: 33rem;
 }  
 #services-teaser img{
-  width: 300px;
+  width: 200px;
 }
 /*****  Projects 2 Cards *****/
 .cards--2 .card{
@@ -93,8 +93,9 @@ table {
   max-width: 700px;
 }  
 #projects-teaser img{
-  width: 300px;
+  width: 100px;
 }
+
 
 /*****  Header  *****/
 .header {
@@ -298,6 +299,12 @@ h1, h2, h3, h4, h5, h6 {
 .view-more {
   font-size: 0.9rem;
 }
+#projects-teaser li{
+  list-style-type:disc;
+  text-align: left;
+}
+
+
 
 /*****  Why Choose Us *****/
 .why h3 {
@@ -321,6 +328,35 @@ h1, h2, h3, h4, h5, h6 {
 .footer .social-nav a {
   color: #fff;
   text-decoration: none;
+}
+
+/*
+  ========================================
+            SIMPLE EFFECT
+  ========================================
+*/
+.card {
+  border: 1px solid var(--clr-hover);
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Button Hover Effect */
+.card .btn {
+  background: var(--clr-accent);
+  color: var(--clr-text-light);
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: var(--clr-blue-darkest);
 }
 
 
@@ -378,6 +414,16 @@ h1, h2, h3, h4, h5, h6{
 #services a{
   margin-top: 1rem;
 }
+
+.block .cards--2 {
+  background-image: url('assets/img/pr.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
 
 /******  Why Choose US? *******/
 .why{
